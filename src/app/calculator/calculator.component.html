@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ung dung may tinh</title>
+
+    <style>
+        table {
+            text-align: center;
+        }
+    </style>
+</head>
+<h1>Ứng dụng máy tính cơ bản sử dụng Angular</h1>
+
+<body>
+    <table border="1" width="25%">
+        <tr>
+            <td colspan="4"><input id="result" type="text" name="text"></td>
+        </tr>
+        <tr>
+            <td><button (click)="popUp('(')">(</button></td>
+            <td><button (click)="popUp(')')">)</button></td>
+            <td><button (click)="popUp('%')">%</button></td>
+            <td><button (click)="reset()">AC</button></td>
+        </tr>
+        <tr>
+            <td><button (click)="popUp(7)">7</button></td>
+            <td><button (click)="popUp(8)">8</button></td>
+            <td><button (click)="popUp(9)">9</button></td>
+            <td><button (click)="popUp('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button (click)="popUp(4)">4</button></td>
+            <td><button (click)="popUp(5)">5</button></td>
+            <td><button (click)="popUp(6)">6</button></td>
+            <td><button (click)="popUp('*')">X</button></td>
+        </tr>
+        <tr>
+            <td><button (click)="popUp(1)">1</button></td>
+            <td><button (click)="popUp(2)">2</button></td>
+            <td><button (click)="popUp(3)">3</button></td>
+            <td><button (click)="popUp('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button (click)="popUp(0)">0</button></td>
+            <td><button (click)="popUp('.')">.</button></td>
+            <td><button (click)="calculate()">=</button></td>
+            <td><button (click)="popUp('+')">+</button></td>
+        </tr>
+    </table>
+</body>
+
+</html>
